@@ -3,11 +3,14 @@
 // array with darkmode colors
 $darkModeColors: (
     moreDark: #1a1717,
-    mainDark: #262121,
+    mainDark: #262424,
+    oldDark: #262121,
     borderGrey: #707070,
     accentRed: #e61818,
     fontbaseLight: #707070,
     fontMoreLight: #b8b0b0,
+    fontLightH1: #B9B9B9,
+    fontLightP:#DEDEDE
 );
 
 /* Skapar en funktion för snygga till map-get-funktionen*/
@@ -15,13 +18,68 @@ $darkModeColors: (
     @return map-get($darkModeColors, $colorName);
 }
 
+$blueColors: (
+    clearBlue: #1473E6,
+    softBlue: #86AFE5,
+    purpleDark: #450b7c,
+    purple: #563cc9,
+    lightBlue: #49e9fb,
+    fontOnBlue: #FFFFFE,
+);
+
+/* Skapar en funktion för blå färger*/
+@function blue($colorName) {
+    @return map-get($blueColors, $colorName);
+}
+
+body {
+    background-color: #F3F4FA;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+$navwhite: #F6F4F2;
+
 // Fonts
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300;400;500;700&display=swap');
+
 $mainFont: "Poppins", sans-serif;
 $headings: Helvetica, sans-serif;
+$headingsNoto: 'Noto Sans HK', sans-serif;
+
+/* mixin för att förenkla mediaqueries*/
+$padda: 500px;
+$desktop: 960px;
+
+
+@mixin padda {
+    @media (min-width: #{$padda}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+
+
 
 p {
     font-family: $mainFont;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    @include padda {
+        font-size: 1.6rem;
+        line-height: 1.9;
+    }
+    @include desktop {
+    }
 }
 a {
     font-family: $mainFont;
@@ -32,11 +90,30 @@ h3 {
     font-family: $headings;
 }
 
-// DarkMode fonts
-#helloH1 {
-    color: #707070;
-    font-size: 20rem;
+h2 {
+    font-size: 2rem;
+    @include padda {
+        font-size: 2.4rem;
+    }
+    @include desktop {
+        font-size: 3rem;
+    }
 }
+.logoH3 {
+    font-family: $headingsNoto;
+    color: $navwhite;
+    font-size: 1.2rem;
+    @include desktop {
+        font-size: 1.6rem;
+    }
+}
+
+.noto {
+    font-family: $headingsNoto;
+}
+
+// DarkMode fonts
+
 
 #darkMode p {
    color: darkmode(fontMoreLight);

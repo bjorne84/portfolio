@@ -1,0 +1,222 @@
+// wave middle
+#wave_2_svg {
+   
+}
+// red wave line across
+.st0{fill:none;stroke:#b42f2f;stroke-width:86;stroke-miterlimit:10;}
+
+
+/* 
+
+$blueColors: (
+    clearBlue: #1473E6,
+    softBlue: #86AFE5,
+    purpleDark: #450b7c,
+    purple: #563cc9,
+    lightBlue: #49e9fb
+);
+
+@function blue($colorName) {
+    @return map-get($blueColors, $colorName);
+}
+
+*/
+.svgHolder {
+    position: relative;
+    height: 200px;
+    display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+#portCloudWrapper H1 {
+    color: blue(fontOnBlue);
+}
+.sectionH {
+    z-index:10;
+    //left: 0;
+    bottom: 0;
+    position: relative;
+    //width: 400px;
+    //height: 100%;
+    
+    padding-left: 0.9em;
+    margin-bottom: 6px;
+    font-size: 3.6em;
+    @include padda {
+        font-size: 6em;
+    }
+    @include desktop {
+        font-size: 10em;
+        margin-bottom: 16px;
+        padding-left: 0.7em;
+    }
+  
+}
+.svgCloud {
+   // max-width: 30%;
+    position: absolute;
+    left: 0;
+    // bottom = grows from bottom om paraent div and up
+    bottom: 0;
+    z-index: -1;
+    // size
+    width: 270px;
+    @include padda {
+        width: 400px;
+    }
+    @include desktop {
+        width: 600px;
+    }
+}
+
+
+.textAndCloud {
+    width: 1220px;
+    margin: 0 auto;
+    position: relative;
+}
+#hej {
+    margin-bottom: 300px;
+}
+
+// cloud path
+#path10000 {
+    fill: blue(clearBlue);
+}
+
+
+// div for holding colorline, cloud and headline
+/* this a got rid of in svg code before g and path
+ style="enable-background:new 0 0 104.9 59.5;"
+*/
+.lineForSections {
+    height: 4em;
+    position: absolute;
+    width: 100%;
+    z-index: -10;
+    @include desktop {
+        height: 6em;
+    }
+   // background-image:  linear-gradient(to top right,#450b7c,#563cc9,#49e9fb);
+} 
+
+#portfolioLine {
+    background-color: blue(softBlue);
+}
+
+
+
+/* portfolio content*/
+
+// wrapper for widht
+.portContent {
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-top: 1.8em;
+
+}
+
+// wrapper for articles in portfolio {
+    /*.articleWrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }*/
+
+// Hold each portfolio item
+.portfolioArticles {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 400px;
+    background-color: #FFFFFF;
+    border-radius: 0.4em;
+    padding-top: 1.4em;
+    padding-bottom: 1em;
+    padding-right: 0.4em;
+    padding-left: 0.4em;
+    margin-bottom: 1.6em;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    @include padda {
+        max-width: 600px;
+        padding: 2em 1em;
+        margin: 0 auto;
+        margin-top: 2em;
+    }
+    @include desktop {
+        flex-direction: row;
+        max-width: 960px;
+        flex-wrap: unset;
+        margin-top: 4em;
+        padding-bottom: 1em;
+    }
+}
+
+  
+// text and logotyp wrapper
+.portText {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    @include desktop {
+        width: 50%;
+        margin-left: 2em;
+    }
+    //width: 50%;
+
+     
+    @include padda {
+        margin-top: 8px;
+    }
+    
+    p 
+    {
+        color: #504949;
+        @include padda {
+            margin-top: 4px;
+        }
+    }
+}
+.h2a {
+    font-family: $headings;
+    color: blue(clearBlue);
+    margin-bottom: 6px;
+
+}
+// wrapper for logos
+.langLogos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 0.6em;
+    margin: 0 auto;
+    @include padda {
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
+       
+    }
+}
+    // hold each logoitem
+    .logoHold {
+        //max-width: 50px;
+        
+        margin-right: 4px;
+        margin-top: 4px;
+
+    }
+    .imgLogos {
+        max-height: 40px;
+    }
+
+// div for images of websites    
+.portImages {
+    order: 1;
+    margin-bottom: 0.4em;
+    @include desktop {
+        width: 50%;
+    }
+}
+    .imgLogos {
+    }

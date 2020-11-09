@@ -1,17 +1,50 @@
-body {
-    background-color: #f8eeee;
+
+header {
+    background-color: darkmode(moreDark);
+    border-bottom: 1px solid #f8eeee;
 }
+
+.headContainer {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.logoHolder {
+    padding: 1em;
+}
+
 
 // The widht to place content
 .widhtMain {
     max-width: 1440px;
     margin: 0 auto;
 }
-
-#darkMode {
-    background-color: darkmode(mainDark);
+// for forstpage the hello part
+.widhtHelloMain {
+    max-width: 1220px;
+    margin: 0 auto;
 }
 
+.innerMargin {
+    margin-right: 6px;
+    margin-left: 6px;
+}
+
+
+
+#darkMode {
+   background-color: darkmode(mainDark);
+   // background-image: linear-gradient(to top right,#450b7c,#563cc9,#49e9fb);
+}
+
+// redline 
+.redLineDiv {
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+    max-width: 1480px;
+    margin: 0 auto;
+}
 
 #helloWrapper {
     display: flex;
@@ -20,10 +53,87 @@ body {
 }
 
 
-#helloPhoto {
-    max-width: 12em;
+#helloH1 {
+    color: darkmode(fontLightH1);
+    font-size: 8rem;
+    @include padda {
+        font-size: 20em;
+    }
+    @include desktop {
+        font-size: 40em;
+    }
 }
 
+
+// wrapper for image
+#helloWidhtImg {
+    width: 30%;
+    @include padda {
+        width: 40%;
+    }
+    @include desktop {
+        width: 30%;
+    }
+}
+
+#helloImg {
+    margin-left: 25%;
+    height: 100%;
+    @include padda {
+        margin-left: 15%;
+    }
+    @include desktop {
+        margin-left: 18%;
+    }
+    
+}
+
+// My Photo off me 
+#helloPhoto {
+    max-width: 16em;
+    @include padda {
+        max-width: 24em;
+    }
+    @include desktop {
+        max-width: 30em;
+    }
+}
+
+// div with text
 .hello2 {
     max-width: 50em;
+    margin-left: 0.4em;
+    margin-right: 0.4em;
+    @include padda {
+        padding-left: 2em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    @include desktop {
+    }
 }
+
+
+// arrow
+.arrowWrap {
+    padding-top: 2em;
+    align-items: center;
+    width: 100%;
+}
+
+.arrowSVG {
+    fill: darkmode(fontMoreLight);
+    max-width: 60px;
+    @include padda {
+        max-width: 100px;
+    }
+    @include desktop {
+        max-width: 130px;
+    }
+}
+// wave svg top
+#wave_svg {
+    fill: darkmode(mainDark);
+   // fill: #0099ff;
+}
+

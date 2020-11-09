@@ -5,75 +5,185 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="scss/styles.css">
-    <title>Document</title>
+    <title>Björn Edin - Webbutvecklare och designer</title>
 </head>
-
 <body>
     <header>
         <div class="headContainer widhtMain">
             <div class="logoHolder">
-                <a href="index.html"><img id="logosize" src="images/matprepp.png" alt="logotyp"></a>
+                <p class="logoH3">Björn Edin</p>
+                <p class="logoH3">Webbutveckling</p>
+                <!-- <a href="index.html"><img id="logosize" src="images/matprepp.png" alt="logotyp"></a>-->
             </div>
             <div class="navHold">
-
                 <div class="nav-toggle">
                     <div class="nav-toggle-bar"></div>
                 </div>
                 <nav class="nav">
                     <ul id="menu">
                         <li class="li"><a class="menuText" href="index.html">Start</a></li>
-                        <li class="li"><a class="menuText" href="#">Små kärnkraftverk</a></li>
-                        <li class="li"><a class="menuText" href="#">Uran</a></li>
-                        <li class="li"><a class="menuText" href="#">Nuclear dance</a></li>
-                        <li class="li"><a class="menuText" href="#">Atomubåtar</a></li>
+                        <li class="li"><a class="menuText" href="#">Portfolio</a></li>
+                        <li class="li"><a class="menuText" href="#">Utbildning</a></li>
+                        <li class="li"><a class="menuText" href="#">CV</a></li>
+                        <li class="li"><a class="menuText" href="#">Kontakt</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
     <main>
-        <div id="darkMode">
-            <section class="widhtMain" id="sectionOne">
-                <div id="helloWrapper">
-                    <h1 id="helloH1">Hej!</h1>
-                    <div id="helloImg" class="verticalCenter">
-                        <picture id="helloPhoto">
-                            <source class="roundImg" srcset="images/200411_bjorn.jpg" media="(min-width: 800px)">
-                            <img class="roundImg" src="/images/200411_bjorn.jpg" alt="bild på mig" />
-                        </picture>
+      
+            <div id="darkMode">
+                <div class="redLineDiv">
+                <section class="widhtHelloMain" id="sectionOne">
+                    <div class="innerMargin">
+                        <div id="helloWrapper">
+                            <h1 id="helloH1">Hej!</h1>
+                            <div id="helloWidhtImg">
+                                <div id="helloImg" class="verticalCenter">
+                                    <picture id="helloPhoto">
+                                        <source class="roundImg" srcset="images/200411_bjorn.jpg"
+                                            media="(min-width: 800px)">
+                                        <img class="roundImg" src="/images/200411_bjorn.jpg" alt="bild på mig" />
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hello2">
+                            <p class="pHello">
+                                Björn här, snart färdigutbildad fullstack webbutvecklare med egen erfarenhet av driva
+                                e-handel.
+                            </p>
+                            <br>
+                            <p class="pHello">
+                                Snabba användarvänliga och sökmotoroptimerade webblösningar är det jag brinner för att
+                                bygga.
+                            </p>
+                            <br>
+                            <p class="pHello">
+                                Det spelar ingen roll hur flashig design du har om inte besökarna eller gud förbjude
+                                google
+                                hittar på eller till sidan.
+                            </p>
+                        </div>
+                        <div class="arrowFlipper">
+                            <div class="arrowWrap verticalCenter">
+                                <svg class="arrowSVG" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="121" height="85"
+                                    viewbox="0 0 85 85">
+                                    <defs>
+                                        <clippath id="clip-path">
+                                            <rect width="85" height="85" fill="none" />
+                                        </clippath>
+                                    </defs>
+                                    <g id="Down_arrow" data-name="Down arrow" clip-path="url(#clip-path)">
+                                        <path id="Path_10" data-name="Path 10"
+                                            d="M42.5,0,34.773,7.727,64.026,36.981H0V48.019H64.026L34.773,77.273,42.5,85,85,42.5Z"
+                                            transform="translate(85) rotate(90)" />
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            </div>
+
+            <div class="container_wave">
+                <svg id="wave_svg" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 320">
+                    <path fill-opacity="1"
+                        d="M0,128L34.3,133.3C68.6,139,137,149,206,138.7C274.3,128,343,96,411,74.7C480,53,549,43,617,69.3C685.7,96,754,160,823,192C891.4,224,960,224,1029,197.3C1097.1,171,1166,117,1234,90.7C1302.9,64,1371,64,1406,64L1440,64L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z">
+                    </path>
+                </svg>
+
+
+                <!--<svg id="wave_svg" viewbox="0 0 500 500" preserveaspectratio="xMinYMin meet">
+                    <path d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z" style="stroke: none;"></path>
+                </svg>-->
+            </div>
+     
+        <!--START PORTFOLIO-->
+        <section id="portfolioSection">
+            <!--Wraps all the top, before content starts-->
+            <div class="sectionTopWrapper">
+                <div class="svgHolder" id="portCloudWrapper">
+                    <div class="textAndCloud">
+                        <h1 class="noto sectionH">Portfolio</h1>
+                        <svg class="svgCloud" id="portfolioCloud_svg" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 104.9 59.5"
+                            style="enable-background:new 0 0 104.9 59.5;" xml:space="preserve">
+                            <g id="layer1" transform="translate(-362.5464,-406.21469)">
+                                <path fill-opacity="1" id="path10000" d="M405.2,409.4c-7.5,0-14.9,3.1-20.2,8.4c-3.3,3.3-5.8,7.5-7.1,12c-3.3,0.6-6.4,2.2-8.7,4.6
+		c-3.1,3.1-4.9,7.4-4.9,11.7c0,4.3,1.8,8.6,4.9,11.7c3.1,3.1,7.4,4.9,11.7,4.9h74.2c2.8,0,5.5-1.1,7.5-3.1c2-2,3.1-4.7,3.1-7.5
+		s-1.1-5.5-3.1-7.5c-1.9-1.9-4.7-3.1-7.4-3.1c-0.5-5-2.8-9.8-6.4-13.4c-4.1-4.1-9.9-6.5-15.7-6.5c-1.4,0-2.8,0.1-4.2,0.4
+		c-1-1.5-2.2-2.9-3.5-4.2C420.1,412.4,412.7,409.4,405.2,409.4L405.2,409.4z" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="lineForSections" id="portfolioLine"></div>
+                </div>
+            </div>
+            <!--CONTENT of portfolio-->
+            <div class="portContent">
+                <div class="innerMargin">
+                    <div id="articleWrapper">
+                        <!--<article class="portfolioArticles">
+                            <div class="portText">
+                                <h2><a class="h2a" href="">Fondinfo</a></h2>
+                                <p>Fondinfo, affilaitewebbplats med fokus på fonder och investeringar. Egenutvecklat
+                                    bloggsystem
+                                    i php/mysql med Wordpress som CMS-system. Egenutvecklat tema till Wordpress.
+                                    En mycket lärorik process och bygga och designa ett eget wordpress-tema.</p>
+                                <div class="langLogos">
+                                    <div class="logoHold">
+                                        <img class="imgLogos" src="images/wordpress-logo.svg" alt="Wordpress-logo">
+                                    </div>
+                                    <div class="logoHold">
+                                        <img class="imgLogos" src="images/php-logo.svg" alt="php-logo">
+                                    </div>
+                                    <div class="logoHold">
+                                        <img class="imgLogos" src="images/mysql.svg" alt="Wordpres-logo">
+                                    </div>
+                                    <div class="logoHold">
+                                        <img class="imgLogos" src="images/HTML5_logo.svg.png" alt="Wordpres-logo">
+                                    </div>
+                                    <div class="logoHold">
+                                        <img class="imgLogos" src="images/CSS3_logo.svg.png" alt="Wordpres-logo">
+                                    </div>
+                                    <div class="logoHold">
+                                        <img class="imgLogos" src="images/Gulp.js_Logo.svg.png" alt="Wordpres-logo">
+                                    </div>
+                                    <div class="logoHold">
+                                        <img class="imgLogos" src="images/babel.png" alt="Wordpres-logo">
+                                    </div>
+                                    <div class="logoHold">
+                                        <img class="imgLogos" src="images/js_logo.png" alt="Wordpres-logo">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="portImages">
+                                <a href="www.fondinfo.se"><img class="imgShow" src="images/fondinfo2.png"
+                                        alt="bild på webbplats"></a>
+                            </div>
+                        </article>-->
                     </div>
                 </div>
-                <div class="hello2">
-                    <p class="pHello">
-                        Björn här, snart färdigutbildad fullstack webbutvecklare med egen erfarenhet av driva e-handel.
-                    </p>
-                    <p class="pHello">
-                        Snabba användarvänliga och sökmotoroptimerade webblösningar är det jag brinner för att bygga.
-                    </p>
-                    <p class="pHello">
-                        Det spelar ingen roll hur flashig design du har om inte besökarna eller gud förbjude google
-                        hittar på eller till sidan.
-                    </p>
-                </div>
-                <div class="arrowFlipper">
-
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="121"
-                        height="121" viewbox="0 0 121 121">
-                        <defs>
-                            <clippath id="clip-path">
-                                <rect width="121" height="121" fill="none" />
-                            </clippath>
-                        </defs>
-                        <g id="Down_arrow" data-name="Down arrow" clip-path="url(#clip-path)">
-                            <path id="Path_10" data-name="Path 10"
-                                d="M42.5,0,34.773,7.727,64.026,36.981H0V48.019H64.026L34.773,77.273,42.5,85,85,42.5Z"
-                                transform="translate(85) rotate(90)" fill="#707070" />
-                        </g>
-                    </svg>
-                </div>
-            </section>
-        </div>
+            </div>
+        </section>
     </main>
+    <div class="elWrappos">
+        <div class="container_wave2">
+            <svg version="1.1" id="Lager_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 595.3 120"
+                style="enable-background:new 0 0 595.3 120;" xml:space="preserve">
+                <g>
+                    <path class="st0" d="M-3.8,49c75.4,0.7,75.2,22.7,150.6,23.3C222.2,73,222.4,51,297.7,51.7c75.4,0.7,75.2,22.7,150.6,23.3
+               s75.6-21.3,150.9-20.7" />
+                </g>
+            </svg>
+        </div>
+    </div>
     <footer>
         <div class="footContainer"></div>
     </footer>
