@@ -32,8 +32,36 @@ $blueColors: (
     @return map-get($blueColors, $colorName);
 }
 
+$orangeColors: (
+    main: #F16334,
+    grey: #CCCCCB,
+    fontColor: #ffffff,
+    fontColor2: #FFFFFE
+);
+
+/* Skapar en funktion för blå färger*/
+@function orange($colorName) {
+    @return map-get($orangeColors, $colorName);
+}
+
+$purpleColors: (
+    main: #C500F3,
+    lighter: #E8B2F5,
+    fontColor: #ffffff,
+    fontColor2: #FFFFFE
+);
+
+/* Skapar en funktion för blå färger*/
+@function purple($colorName) {
+    @return map-get($purpleColors, $colorName);
+}
+
+
+
+
 body {
-    background-color: #F3F4FA;
+    background-color: #FBFBFB;
+    // #F3F4FA;
 }
 
 html {
@@ -70,7 +98,7 @@ $desktop: 960px;
 
 
 
-p {
+p, .lispan {
     font-family: $mainFont;
     font-size: 1.4rem;
     line-height: 1.8;

@@ -17,8 +17,8 @@ function getPortfolio() {
         .then(response => response.json()
             .then(data => {
                 data.forEach(portfolio => {
-                    console.log(portfolio);
-                    console.log("test getData");
+                   // console.log(portfolio);
+                   // console.log("test getData");
                     articleWrapperEl.innerHTML +=
                         ` <article class="portfolioArticles">
                         <div class="portText">

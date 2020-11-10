@@ -1,26 +1,8 @@
 // wave middle
-#wave_2_svg {
-   
-}
+
 // red wave line across
 .st0{fill:none;stroke:#b42f2f;stroke-width:86;stroke-miterlimit:10;}
 
-
-/* 
-
-$blueColors: (
-    clearBlue: #1473E6,
-    softBlue: #86AFE5,
-    purpleDark: #450b7c,
-    purple: #563cc9,
-    lightBlue: #49e9fb
-);
-
-@function blue($colorName) {
-    @return map-get($blueColors, $colorName);
-}
-
-*/
 .svgHolder {
     position: relative;
     height: 200px;
@@ -47,7 +29,7 @@ $blueColors: (
         font-size: 6em;
     }
     @include desktop {
-        font-size: 10em;
+        font-size: 9em;
         margin-bottom: 16px;
         padding-left: 0.7em;
     }
@@ -96,7 +78,7 @@ $blueColors: (
     width: 100%;
     z-index: -10;
     @include desktop {
-        height: 6em;
+        height: 8em;
     }
    // background-image:  linear-gradient(to top right,#450b7c,#563cc9,#49e9fb);
 } 
@@ -218,5 +200,102 @@ $blueColors: (
         width: 50%;
     }
 }
-    .imgLogos {
+ 
+
+    /* courses */
+    #coursesSection {
+        margin-top: 35em;
+    }
+
+    // cloud path
+#orangeFill {
+    fill: orange(main);
+}
+
+#coursesLine {
+    background-color:orange(grey);
+}
+
+#portCloudWrapper_courses {
+    h1 {
+        color: orange(fontColor);
+    }
+}
+
+
+.getcourse {
+    //max-width:50em;
+    border-bottom: dotted 5px #e74e1a;
+    margin-bottom: 30px;
+    padding-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 2em;
+    }
+    .li_nth:nth-child(odd) {
+        background: rgb(204, 204, 206);
+      }
+    .lispan {
+        display: flex;
+        justify-content: space-between;
+        /*max-width: 15em;*/
+        padding-left: 1em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    
+    .btn-wrapper {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    // div hold the educatoins
+    .wrapperEducation {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .educationHold {
+        width: 600px;
+        background-color: #FFFFFF;
+        border-radius: 0.4em;
+        padding-top: 1.4em;
+        padding-bottom: 1em;
+        padding-right: 0.4em;
+        padding-left: 0.4em;
+        margin-bottom: 1.6em;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        margin: 0 auto;
+    }
+
+    .textEduWrapper {
+        margin-left: 1em;
+        margin-bottom: 1em;
+    }
+
+
+    // CV
+    #cvSection {
+        margin-top: 35em;
+    }
+    #cvFill {
+        fill: purple(main);
+    }
+
+    #cvLine {
+        background-color: purple(lighter);
+    }
+
+    #portCloudWrapper_cv {
+        h1 {
+            color: purple(fontColor);
+        }
     }
