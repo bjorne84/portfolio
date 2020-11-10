@@ -12,8 +12,8 @@
     <header>
         <div class="headContainer widhtMain">
             <div class="logoHolder">
-                <p class="logoH3">Björn Edin</p>
-                <p class="logoH3">Webbutveckling</p>
+                <span class="logoH3"><a class="alogotext" href="index.html">Björn Edin - </a></span>
+                <span class="logoH3"><a class="alogotext" href="index.html"> Webbutveckling</a></span>
                 <!-- <a href="index.html"><img id="logosize" src="images/matprepp.png" alt="logotyp"></a>-->
             </div>
             <div class="navHold">
@@ -23,10 +23,10 @@
                 <nav class="nav">
                     <ul id="menu">
                         <li class="li"><a class="menuText" href="index.html">Start</a></li>
-                        <li class="li"><a class="menuText" href="#">Portfolio</a></li>
-                        <li class="li"><a class="menuText" href="#">Utbildning</a></li>
-                        <li class="li"><a class="menuText" href="#">CV</a></li>
-                        <li class="li"><a class="menuText" href="#">Kontakt</a></li>
+                        <li class="li"><a class="menuText" href="#portfolio">Portfolio</a></li>
+                        <li class="li"><a class="menuText" href="#courses">Utbildning</a></li>
+                        <li class="li"><a class="menuText" href="#cv">CV</a></li>
+                        <li class="li"><a class="menuText" href="#footer">Kontakt</a></li>
                     </ul>
                 </nav>
             </div>
@@ -78,9 +78,10 @@
                                         </clippath>
                                     </defs>
                                     <g id="Down_arrow" data-name="Down arrow" clip-path="url(#clip-path)">
+                                        <a href="#portfolio">
                                         <path id="Path_10" data-name="Path 10"
                                             d="M42.5,0,34.773,7.727,64.026,36.981H0V48.019H64.026L34.773,77.273,42.5,85,85,42.5Z"
-                                            transform="translate(85) rotate(90)" />
+                                            transform="translate(85) rotate(90)" /></a>
                                     </g>
                                 </svg>
                             </div>
@@ -104,6 +105,7 @@
         </div>
 
         <!--START PORTFOLIO-->
+        <a name="portfolio" class="insideLinks"></a>
         <section id="portfolioSection">
             <!--Wraps all the top, before content starts-->
             <div class="sectionTopWrapper">
@@ -172,7 +174,8 @@
                 </div>
             </div>
         </section>
-        <section id="coursesSection">
+        <a name="courses" class="insideLinks"></a>
+        <section id="coursesSection" class="sectionMargin">
             <!--Wraps all the top, before content starts-->
             <div class="sectionTopWrapper">
                 <div class="svgHolder" id="portCloudWrapper_courses">
@@ -198,10 +201,10 @@
                 <div class="innerMargin">
                     <div class="wrapperEducation">
                         <div class="educationHold" id="miun">
-                      
+
                         </div>
                         <div class="educationHold" id="hermods">
-                           <!-- <div class="getcourse">
+                            <!-- <div class="getcourse">
                                 <ul class="ul">
                                     <li class="li_nth">
                                         <div class="lispan"><span class="courseSpan">Lärosäte:</span><span
@@ -216,7 +219,8 @@
         </section>
 
         <!-- ****** CV ********-->
-        <section id="cvSection">
+        <a name="cv" class="insideLinks"></a>
+        <section id="cvSection" class="sectionMargin">
             <!--Wraps all the top, before content starts-->
             <div class="sectionTopWrapper">
                 <div class="svgHolder" id="portCloudWrapper_cv">
@@ -240,27 +244,46 @@
             <!--CONTENT of portfolio-->
             <div class="portContent">
                 <div class="innerMargin">
-                    <div class="wrapperEducation">
-                     
+                    <div id="wrapperCV" class="wrapperCV">
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <div class="elWrappos">
-        <div class="container_wave2">
-            <svg version="1.1" id="Lager_1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 595.3 120"
-                style="enable-background:new 0 0 595.3 120;" xml:space="preserve">
-                <g>
-                    <path class="st0" d="M-3.8,49c75.4,0.7,75.2,22.7,150.6,23.3C222.2,73,222.4,51,297.7,51.7c75.4,0.7,75.2,22.7,150.6,23.3
-               s75.6-21.3,150.9-20.7" />
-                </g>
+   
+        <div class="container_wave" id="wave_foot_container">
+            <svg id="wave_foot_svg" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 320">
+                <path id="path_foot_wave" fill-opacity="1"
+                    d="M0,128L34.3,133.3C68.6,139,137,149,206,138.7C274.3,128,343,96,411,74.7C480,53,549,43,617,69.3C685.7,96,754,160,823,192C891.4,224,960,224,1029,197.3C1097.1,171,1166,117,1234,90.7C1302.9,64,1371,64,1406,64L1440,64L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z">
+                </path>
             </svg>
         </div>
-    </div>
+
     <footer>
-        <div class="footContainer"></div>
+        <div class="footContainer">
+            <a name="footer"></a>
+            <div class="elWrappos">
+                <div class="container_wave2">
+                    <div id="minHfooter"></div>
+                    <svg version="1.1" id="Lager_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 595.3 120"
+                        style="enable-background:new 0 0 595.3 120;" xml:space="preserve">
+                        <g>
+                            <path class="st0" d="M-3.8,49c75.4,0.7,75.2,22.7,150.6,23.3C222.2,73,222.4,51,297.7,51.7c75.4,0.7,75.2,22.7,150.6,23.3
+                       s75.6-21.3,150.9-20.7" />
+                        </g>
+                    </svg>
+                    <div id="textFoot">
+                        <div id="textAdjust">
+                        <p id="fot"><b>&#169; 2020 - Björn Edin</b><br>
+                            kontakta mig på: 070-7615155<br>
+                            bjed1500@student.miun.se<br> 
+                        </p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
     <script src="js/main.js"></script>
 </body>

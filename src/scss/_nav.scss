@@ -1,12 +1,18 @@
 /* -----------NAV MOBILE------
  THE SIDEBAR MENU, 
  this menu-solution is from cssscipt.com*/
-
+header {
+    @include desktop {
+        position: fixed;
+        width: 100%;
+        z-index: 2000;
+    }
+}
  .menuText {
     color: #F6F4F2;
     text-decoration: none;
     line-height: 2em;
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-family: $mainFont;
     @include desktop {
         font-size: 1.8rem;

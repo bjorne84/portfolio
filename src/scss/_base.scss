@@ -133,15 +133,26 @@ h2 {
     font-size: 1.2rem;
     @include desktop {
         font-size: 1.6rem;
+        padding-left: 0.4em;
+
     }
 }
+// text i logotyp
+.alogotext {
+    font-family: $headingsNoto;
+    color: $navwhite;
+    font-size: 1.2rem;
+    text-decoration: none;
+    @include desktop {
+        font-size: 1.6rem;
+        padding-left: 0.4em;
 
+    }
+}
 .noto {
     font-family: $headingsNoto;
 }
-
 // DarkMode fonts
-
 
 #darkMode p {
    color: darkmode(fontMoreLight);
