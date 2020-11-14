@@ -1,0 +1,52 @@
+footer {
+    //  margin-top: 20em;
+    background-color: darkmode(mainDark);
+    // min-height: 200px;
+    margin-top: -5px;
+}
+
+#minHfooter {
+    min-height: 200px;
+    @include desktop {
+        min-height: 20px;
+    }
+}
+
+#wave_foot_svg {
+    transform: rotate(180deg);
+}
+
+#path_foot_wave {
+    fill: darkmode(mainDark);
+}
+// red wave line across
+.st0 {
+    fill: none;
+    stroke: #303030;
+    stroke-width: 50;
+    stroke-miterlimit: 10;
+}
+
+// fix position of overlapping element
+.container_wave2 {
+    position: relative;
+}
+
+#textFoot {
+    position: absolute;
+    margin-top: -200px;
+    width: 100%;
+}
+// text in footer
+#textAdjust {
+    margin: 0 auto;
+    width: max-content;
+    border-radius: 0.2em;
+    border: dotted 4px orange(main);
+    padding: 2em;
+    text-align: center;
+
+    p {
+        color: orange(fontColor2);
+    }
+}

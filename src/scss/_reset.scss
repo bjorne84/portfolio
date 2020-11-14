@@ -21,7 +21,9 @@ body, h1, h2, h3, h4, p, a, ul[class], ol[class], li, figure, figcaption, blockq
 }
 
 /* Set core body defaults */
-
+html  {
+    scroll-behavior: smooth;
+}
 body {
     min-height: 100vh;
     scroll-behavior: smooth;
