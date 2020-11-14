@@ -2,7 +2,7 @@
 [Till portfolion](https://www.webb01.se/webb01_projekt/portfolio/index.html)
 ## Automatiseringsprocess:
 Portfolion innehåller förrutom webbplatser jag byggt data över 
-utbildning och CV. Den komsumerar en webbtjänst där datan ligger.
+utbildning och CV. Den konsumerar en webbtjänst där datan ligger.
 
 ## Paket
 **NPM-paket som används:**
