@@ -37,7 +37,7 @@ header {
     -ms-transition: right 0.5s ease;
     -o-transition: right 0.5s ease;
     transition: right 0.5s ease;
-    background: color(grey);
+    //background: color(grey);
     color: white;
     cursor: pointer;
     font-size: 2rem;
@@ -67,11 +67,6 @@ header {
     margin: 0;
     padding: 0;
     text-align: left;
-
-    
-       .li {
-           border-bottom: 1px solid color #F6F4F2;
-        }
     
 }
 
